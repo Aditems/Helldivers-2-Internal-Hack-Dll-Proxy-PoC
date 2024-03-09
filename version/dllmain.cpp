@@ -47,9 +47,9 @@ void displayCheckboxes(const std::vector<Checkbox>& checkboxes, size_t selectedC
     printf(_XOR_("[Init] - Helldiver 2 PoC DLL Proxy...\n"));
     printf(_XOR_("[Init] - Thanks to cfemen and gir489...\n"));
 
-    printf(_XOR_("[Ready] : Select some of the features below by pressing the [Space] key.\n"));
-    printf(_XOR_("[Ready] : Press [Enter] to run the feature you selected.\n"));
-    printf(_XOR_("[Ready] : After pressing [Enter], the selected features cannot be changed.\n"));
+    printf(_XOR_("[Ready] : 按空格键勾选下列需要开启的功能\n"));
+    printf(_XOR_("[Ready] : 按回车键运行你选择的功能\n"));
+    printf(_XOR_("[Ready] : 按回车键后将无法关闭已开启的功能\n"));
 
     std::cout << _XOR_("Checkboxes:\n");
     for (size_t i = 0; i < checkboxes.size(); ++i) {
@@ -658,7 +658,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
 
         }
     }
-    printf(_XOR_("[Exit] Unload\n"));
+    printf(_XOR_("关闭\n"));
     FreeConsole();
     FreeLibraryAndExitThread(g_hModule, 0);
     return 0;
