@@ -49,7 +49,7 @@ void displayCheckboxes(const std::vector<Checkbox>& checkboxes, size_t selectedC
 
     printf(_XOR_("[Ready] : 按空格键勾选下列需要开启的功能\n"));
     printf(_XOR_("[Ready] : 按回车键运行你选择的功能\n"));
-    printf(_XOR_("[Ready] : 按回车键后将无法关闭已开启的功能\n"));
+    printf(_XOR_("[Ready] : 按回车键后将无法关闭已开启的\n"));
 
     std::cout << _XOR_("Checkboxes:\n");
     for (size_t i = 0; i < checkboxes.size(); ++i) {
